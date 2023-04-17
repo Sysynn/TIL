@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: var(--color-white-bg);
+}
+
+/* header - 메뉴버튼, 로고, 다크모드 버튼 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  background-color: var(--color-gray-300);
+  position: fixed;
+  top:0
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.menuButton {
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  color: var(--color-gray-500);
+}
+
+.logo {
+  width: 21px;
+  height: 21px;
+  margin-left: 30px;
+  color: var(--color-gray-500);
+}
+
+.darkmodeButton {
+  width: 21px;
+  height: 21px;
+  margin-right: 30px;
+  color: var(--color-gray-500);
+}
+
+#menuButton {
+  display: none;
+}
+
+.pageTitle {
+  font-family: var(--font-family);
+  color: var(--color-gray-500);
+}
+
+/* section */
+section {
+  margin-top: 90px;
+}
+
+section div {
+  width: 700px;
+  height: 125px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  section div {
+    width: 700px;
+    height: 125px;
+  }
+}
+
+@media screen and (max-width:768px){
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  section div {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 10px 10px;
+  }
+}

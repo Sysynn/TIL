@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>햇님반 브런치</title>
+  <link rel="stylesheet" href="./style/mainpage.css">
+  <link rel="stylesheet" href="./style/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- 여기에는 메뉴버튼과 로고(왼), 다크모드버튼(오)이 들어갑니다  -->
+    <div>
+      <div class="menuButton" id="menuButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg></div>
+        <aside class="sideBar">
+          <!-- 여기에는 사이드바 내용이 들어갑니다 -->
+          <div class="profileCard">
+            <img src="./asset/초원.jpg" alt="프로필 이미지">
+            <div class="profileName">김초원</div>
+            <div class="profileEmail">kimfield98@naver.com</div>
+            <div class="profileButton">
+              <button>글쓰기</button>
+              <button>로그인</button>
+            </div>
+          </div>
+          <div class="menu">
+            <div>햇님반 소개</div>
+            <div>멤버소개</div>
+            <div>게시판</div>
+            <div>피드</div>
+          </div>
+        </aside>
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+          <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="darkmodeButton">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </svg>
+    </div>
+  </header>
+  <section>
+    <hgroup>
+    <!-- 여기에는 사이트 소개글이 들어갑니다 -->
+    <h1>안녕하세요 우리는 햇님반입니다!</h1>
+    <h2>개발 성장과정을 기록합니다.</h2>
+    </hgroup>
+    <!-- 여기에는 캐로젤과 인디케이터(article1), 키워드박스(article2)가 들어갑니다 -->
+    <article class="carousel">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <button class="indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+        </svg>
+      </button>
+    </article>
+    <article class="keywordBox">
+      <div class="keywordTitle">
+        <h3>M E M B E R B O X</h3>
+        <h4>멤 버 별 로 분 류 된 글 모 음</h4>
+      </div>
+      <div class="keywordContent">
+        <div>초원<span>Frontend</span></div>
+        <div>주현<span>Frontend</span></div>
+        <div>상윤<span>Frontend</span></div>
+        <div>윤원<span>Backend</span></div>
+        <div>충현<span>Backend</span></div>
+        <div>신혜<span>Backend</span></div>
+        <div>지수<span>Backend</span></div>
+      </div>
+    </article>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>

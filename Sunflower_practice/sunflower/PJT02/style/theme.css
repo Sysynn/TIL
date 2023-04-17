@@ -1,0 +1,11 @@
+:root {
+  --color-white-bg:#f4f4f6;
+  --color-gray-300:#e6e6e9;
+  --color-gray-400:#9999a1;
+  --color-gray-500:#66666e;
+  --color-black:#000000;
+  --color-yellow-300:#fff8e8;
+  --color-yellow-400:#fcd581;
+  --font-family:'Nanum Gothic', sans-serif;
+  --font-family:'Noto Sans KR', sans-serif;
+}

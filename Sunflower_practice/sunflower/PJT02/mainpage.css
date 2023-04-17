@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: var(--color-white-bg);
+}
+
+/* header - 메뉴버튼, 로고, 다크모드 버튼 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  background-color: var(--color-gray-300);
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.menuButton {
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  color: var(--color-gray-500);
+}
+
+.logo {
+  width: 21px;
+  height: 21px;
+  margin-left: 30px;
+  color: var(--color-gray-500);
+}
+
+.darkmodeButton {
+  width: 21px;
+  height: 21px;
+  margin-right: 30px;
+  color: var(--color-gray-500);
+}
+
+/* 햇님반 소개글 */
+hgroup {
+  margin-top: 30px;
+}
+
+h1 {
+  margin: 0 90px;
+  color: var(--color-black);
+}
+
+h2 {
+  margin: 0 90px;
+  color: var(--color-gray-500);
+}
+
+/* 캐로젤 */
+.carousel {
+  width: 960px;
+  height: 520px;
+  border: 1px solid black;
+  margin-top: 30px;
+  margin-left: auto;
+  position: relative;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li{
+  width: 320px;
+  height: 520px;
+  border: 1px solid black;
+}
+
+.indicator {
+  position: absolute;
+  top: 45%;
+  left: 90%;
+  color: var(--color-gray-500);
+  opacity: 0.7;
+  background-color: inherit;
+  border: none;
+}
+
+/* 키워드 */
+.keywordTitle {
+  margin-top: 60px;
+  text-align: center;
+}
+
+h3 {
+  color: var(--color-black);
+  font-family: var(--font-family);
+  letter-spacing: 10px;
+}
+
+h4 {
+  color: var(--color-gray-500);
+  font-family: var(--font-family);
+  font-size: 14px;
+  letter-spacing: 7px;
+  margin-top: 7px;
+}
+
+.keywordContent {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.keywordContent div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 119px;
+  height: 119px;
+  margin: 3px;
+  border: 1px solid var(--color-gray-500);
+  color: var(--color-gray-500);
+  font-family: var(--font-family);
+  font-weight: 300;
+}
+
+.keywordContent div:hover {
+  background-color: var(--color-yellow-300);
+  border: 2px solid var(--color-gray-500);
+  font-weight: 500;
+}
+
+/* 사이드바 */
+.sideBar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  z-index: 999;
+  transition: all 0.5s;
+  
+}
+.sideBar.active {
+  left: 0;
+}
+
+
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 239px;
+  background-color: var(--color-gray-300);
+  border: 1px solid var(--color-gray-500);
+}
+
+.profileCard img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-top: 21px;
+}
+
+.profileName {
+  color: var(--color-black);
+  margin-top: 14px;
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+
+.profileEmail {
+  color: var(--color-gray-500);
+  margin-top: 3px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.profileButton {
+  margin-top: 14px;
+}
+
+.profileButton button {
+  width: 80px;
+  height: 32px;
+  color: var(--color-gray-500);
+  background-color: var(--color-yellow-400);
+  border: 1px solid var(--color-gray-500);
+  border-radius: 16px;
+  font-family: var(--font-family);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 260px;
+  height: 350px;
+  background-color: var(--color-yellow-300);
+  border-right: 1px solid var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-500);
+  font-family: var(--font-family);
+}
